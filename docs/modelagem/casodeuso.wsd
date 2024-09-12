@@ -1,0 +1,17 @@
+@startuml
+
+(First usecase)
+(Another usecase) as (UC2)
+usecase UC3
+usecase (Last\nusecase) as UC4
+
+:First Actor:
+:Another\nactor: as Man2
+actor Woman3
+actor :Last actor: as Person1
+
+:User: --> (Use the application)
+
+"Main Admin" as Admin
+Admin --> (Admin the application)
+@enduml
