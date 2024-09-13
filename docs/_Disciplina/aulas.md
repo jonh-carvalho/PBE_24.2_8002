@@ -7,3 +7,4 @@
 | __03__ - 23/03/24    | :material-check: Apresentação de Tema do Projeto - Principais Funcionalidades do Projeto            |
 | __04__ - 30/08/24    | :material-check: Elaboração 5w2h - [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)                         |
 | __05__ - 06/09/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf) - [RUP](../assets/Aulas/RUP.pdf)                                              |
+| __06__ - 12/09/24     | :material-check:[Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) |
