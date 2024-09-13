@@ -1,14 +1,14 @@
 ---
-id: interação5
-title: Interação 5
+id: iteração6
+title: iteração 6
 ---
-# Interação 5 (10/10/24 à 23/10/2024)
+# iteração 6 (24/10/24 à 06/11/2024)
 
-## Planejamento de Interação
+## Planejamento de iteração
 
 #### Presentes na reunião: XXXXX
 
-### Lista de Tarefas da Interação
+### Lista de Tarefas da iteração
 
 | Tarefa                                                                                       | Responsabilidade |
 | -------------------------------------------------------------------------------------------- | ---------------- |
@@ -28,7 +28,7 @@ title: Interação 5
 
 #### Presentes na reunião: XXXX
 
-### Dividas da Interação
+### Dividas da iteração
 
 ### Riscos Encontrados
 
