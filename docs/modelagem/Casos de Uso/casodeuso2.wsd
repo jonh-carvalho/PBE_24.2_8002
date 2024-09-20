@@ -1,19 +1,25 @@
-left to right direction
+@startuml
+title "Caso de Uso - Usuário Reserva um Livro"
 
-actor Guest as g
+actor "Usuário autenticado" as Usuario
+actor "Sistema de pagamento" as Pagamento
 
-package Professional {
-  actor Chef as c
-  actor "Food Critic" as fc
-}
-package Restaurant {
-  usecase "Eat Food" as UC1
-  usecase "Pay for Food" as UC2
-  usecase "Drink" as UC3
-  usecase "Review" as UC4
-}
+Usuario -> (Navegar na biblioteca)
+Usuario -> (Selecionar um livro disponível)
+Usuario --> (Reservar Livro)
+Usuario --> (Verificar status de assinatura)
 
-fc -- UC4
-g --> UC1
-g --> UC2
-g --> UC3
+Pagamento <-- (Verificar status de assinatura) : Status da assinatura
+
+(Reservar Livro) --> (Verificar limite de reservas)
+(Verificar limite de reservas) --> Usuario : Limite excedido
+
+(Verificar status de assinatura) --> (Reserva Imediata)
+(Verificar limite de reservas) --> (Reserva Imediata)
+(Reserva Imediata) --> (Atualizar Status do Livro)
+(Atualizar Status do Livro) --> (Notificar Usuário)
+
+(Selecionar um livro disponível) --> (Verificar Disponibilidade do Livro)
+(Verificar Disponibilidade do Livro) --> Usuario : Livro indisponível
+
+@enduml
