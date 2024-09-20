@@ -34,21 +34,49 @@ Você foi contratado para desenvolver um sistema para gerenciar uma **biblioteca
 A partir deste caso de uso, você pode definir os seguintes objetos e suas interações:
 
 1. **Usuário**:
+
    - Atributos: nome, email, status de assinatura, número de reservas.
    - Métodos: autenticar(), reservarLivro(), cancelarReserva().
-
 2. **Livro**:
+
    - Atributos: título, autor, status (disponível, reservado, indisponível), prazo de retirada.
    - Métodos: verificarDisponibilidade(), reservar(), liberarReserva().
-
 3. **Biblioteca**:
+
    - Atributos: catálogo de livros, usuários cadastrados.
    - Métodos: buscarLivro(), registrarReserva(), verificarLimiteReservas().
-
 4. **Assinatura**:
+
    - Atributos: tipo (premium, básico), limite de reservas.
    - Métodos: verificarBenefícios().
 
 ---
 
 Esse cenário pode ser expandido com novos casos de uso, como o gerenciamento de downloads ou renovação de assinaturas.
+
+```plantuml
+@startuml
+title "Caso de Uso - Usuário Reserva um Livro"
+
+actor "Usuário autenticado" as Usuario
+actor "Sistema de pagamento" as Pagamento
+
+Usuario -> (Navegar na biblioteca)
+Usuario -> (Selecionar um livro disponível)
+Usuario --> (Reservar Livro)
+Usuario --> (Verificar status de assinatura)
+
+Pagamento <-- (Verificar status de assinatura) : Status da assinatura
+
+(Reservar Livro) --> (Verificar limite de reservas)
+(Verificar limite de reservas) --> Usuario : Limite excedido
+
+(Verificar status de assinatura) --> (Reserva Imediata)
+(Verificar limite de reservas) --> (Reserva Imediata)
+(Reserva Imediata) --> (Atualizar Status do Livro)
+(Atualizar Status do Livro) --> (Notificar Usuário)
+
+(Selecionar um livro disponível) --> (Verificar Disponibilidade do Livro)
+(Verificar Disponibilidade do Livro) --> Usuario : Livro indisponível
+@enduml
+```

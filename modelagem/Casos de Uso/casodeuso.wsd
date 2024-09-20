@@ -1,17 +1,25 @@
 @startuml
 
+' Casos de Uso
 (First usecase)
-(Another usecase) as (UC2)
-usecase UC3
-usecase (Last\nusecase) as UC4
 
+(Another usecase) as (UC2)
+
+usecase UC3
+
+usecase (Last\n usecase) as UC4
+
+' Atores
 :First Actor:
-:Another\nactor: as Man2
+
+:Another\n Actor: as Man2
+
 actor Woman3
 actor :Last actor: as Person1
-
-:User: --> (Use the application)
-
 "Main Admin" as Admin
+
+' Relações
+Man2 --> (Use the application)
+
 Admin --> (Admin the application)
 @enduml

@@ -15,15 +15,11 @@ UA --> RL
 UA --> PL
 UA --> BL
 
-
-
-
 U -> (Login)
 
 U --> (Pesquisar Livro)
 U --> (Reservar Livro)
 U --> (Cancelar Reserva)
-
 
 U --> S
 SP --> S : Verificar status de assinatura
@@ -33,6 +29,5 @@ SP --> S : Verificar status de assinatura
 (Sistema) <|-- (Atualizar status do livro)
 
 U --> (Receber Notificação)
-
 
 @enduml

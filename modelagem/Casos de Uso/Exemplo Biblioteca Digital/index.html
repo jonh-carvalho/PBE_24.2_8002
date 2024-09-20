@@ -1368,33 +1368,62 @@
 <h3 id="pontos-para-modelagem">Pontos para Modelagem</h3>
 <p>A partir deste caso de uso, você pode definir os seguintes objetos e suas interações:</p>
 <ol>
-<li><strong>Usuário</strong>:</li>
-<li>Atributos: nome, email, status de assinatura, número de reservas.</li>
 <li>
-<p>Métodos: autenticar(), reservarLivro(), cancelarReserva().</p>
+<p><strong>Usuário</strong>:</p>
 </li>
+<li>
+<p>Atributos: nome, email, status de assinatura, número de reservas.</p>
+</li>
+<li>Métodos: autenticar(), reservarLivro(), cancelarReserva().</li>
 <li>
 <p><strong>Livro</strong>:</p>
 </li>
-<li>Atributos: título, autor, status (disponível, reservado, indisponível), prazo de retirada.</li>
 <li>
-<p>Métodos: verificarDisponibilidade(), reservar(), liberarReserva().</p>
+<p>Atributos: título, autor, status (disponível, reservado, indisponível), prazo de retirada.</p>
 </li>
+<li>Métodos: verificarDisponibilidade(), reservar(), liberarReserva().</li>
 <li>
 <p><strong>Biblioteca</strong>:</p>
 </li>
-<li>Atributos: catálogo de livros, usuários cadastrados.</li>
 <li>
-<p>Métodos: buscarLivro(), registrarReserva(), verificarLimiteReservas().</p>
+<p>Atributos: catálogo de livros, usuários cadastrados.</p>
 </li>
+<li>Métodos: buscarLivro(), registrarReserva(), verificarLimiteReservas().</li>
 <li>
 <p><strong>Assinatura</strong>:</p>
 </li>
-<li>Atributos: tipo (premium, básico), limite de reservas.</li>
+<li>
+<p>Atributos: tipo (premium, básico), limite de reservas.</p>
+</li>
 <li>Métodos: verificarBenefícios().</li>
 </ol>
 <hr />
 <p>Esse cenário pode ser expandido com novos casos de uso, como o gerenciamento de downloads ou renovação de assinaturas.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>@startuml
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>title &quot;Caso de Uso - Usuário Reserva um Livro&quot;
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>actor &quot;Usuário autenticado&quot; as Usuario
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>actor &quot;Sistema de pagamento&quot; as Pagamento
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Usuario -&gt; (Navegar na biblioteca)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Usuario -&gt; (Selecionar um livro disponível)
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Usuario --&gt; (Reservar Livro)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Usuario --&gt; (Verificar status de assinatura)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Pagamento &lt;-- (Verificar status de assinatura) : Status da assinatura
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>(Reservar Livro) --&gt; (Verificar limite de reservas)
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>(Verificar limite de reservas) --&gt; Usuario : Limite excedido
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>(Verificar status de assinatura) --&gt; (Reserva Imediata)
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>(Verificar limite de reservas) --&gt; (Reserva Imediata)
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>(Reserva Imediata) --&gt; (Atualizar Status do Livro)
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>(Atualizar Status do Livro) --&gt; (Notificar Usuário)
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>(Selecionar um livro disponível) --&gt; (Verificar Disponibilidade do Livro)
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>(Verificar Disponibilidade do Livro) --&gt; Usuario : Livro indisponível
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>@enduml
+</span></code></pre></div>
 
 
 
