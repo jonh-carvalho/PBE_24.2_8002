@@ -1,5 +1,7 @@
 left to right direction
+
 actor Guest as g
+
 package Professional {
   actor Chef as c
   actor "Food Critic" as fc
