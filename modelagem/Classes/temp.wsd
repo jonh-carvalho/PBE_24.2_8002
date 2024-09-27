@@ -1,40 +1,73 @@
 @startuml
-class Usuario {
-    - nome : String
-    - email : String
-    - senha : String
-    + login()
-    + realizarEmpréstimo()
+class Carro {
+  +marca
+  +modelo
+  +ano
+  +cor
+  +velocidade
+
+  +acelerar()
+  +frear()
+  +ligar()
+  +desligar()
 }
 
-class Livro {
-    - título : String
-    - autor : String
-    - ISBN : String
-    - anoPublicação : int
-    + verificarDisponibilidade()
+class Motor {
+  +potencia
+  +tipo
+
+  +ligarMotor()
+  +desligarMotor()
 }
 
-class Emprestimo {
-    - dataEmpréstimo : Date
-    - dataDevolução : Date
-    + calcularMulta()
+class Roda {
+  +tamanho
+  +tipo
+
+  +girar()
+  +frear()
+  }
+
+class Motorista {
+  +nome
+  +cnh
+  +idade
+
+  +dirigir()
+  +estacionar()
 }
 
-class Bibliotecario {
-    - idFuncionário : int
-    + adicionarLivro()
-    + removerLivro()
+class CarroEletrico {
+  +autonomiaBateria: int
+  +carregarBateria(): void
 }
 
-class Catalogo {
-    - listaLivros : List<Livro>
-    + buscarLivro()
-}
+class CarroCombustao {
+  +capacidadeTanque: int
+  +abastecer(): void
+}   
 
-Usuario --> Emprestimo 
-Emprestimo --> Livro 
-Emprestimo --> Usuario 
-Bibliotecario --> Usuario
-Catalogo <-- Livro 
+Carro "1" -- "1" Motor : possui
+Carro "1" -- "N" Roda : possui
+
+Carro "N" -- "N" Motorista
+
+Motor <|-- CarroEletrico
+Motor <|-- CarroCombustao
+
+Carro "1" o-- "N" Roda : possui
+
+Carro "1" *-- "1" Motor : contém
+
+
+
+
+
+
+
+
+
+
+
+
 @enduml
