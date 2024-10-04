@@ -10,3 +10,4 @@
 | __06__ - 13/09/24     | :material-check:[Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf)      |       
 | __07__ - 20/09/24     | :material-check: [Classes](../assets/Aulas/Classes_Pacotes.pdf)            |
 | __08__ - 27/09/24     | :material-check: AP1 - Apresentação                                        |
+| __09__ - 04/10/24     | :material-check: Python OO ([Notebook](../modelagem/poo/poo.ipynb), [Conceito de OO](../modelagem/poo/Conceitos-basicos-de-OO.pdf) e [Python OO](../modelagem/poo/Python-OO.pdf)                                           |
