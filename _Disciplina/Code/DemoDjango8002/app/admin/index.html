@@ -778,6 +778,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../migrations/0002_employee/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0002 employee
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrations/0003_department_alter_employee_department/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0003 department alter employee department
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../migrations/__init__/" class="md-nav__link">
         
   
@@ -1180,6 +1222,153 @@
             Django
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/01_Projeto_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 Projeto Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/02_Modelagem_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 Modelagem Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/03_Rest_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 Rest Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/04_Shell_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 Shell Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/05_Consume_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    05 Consume Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/06_Consume_Streaming_Web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    06 Consume Streaming Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Roteiros/Django/07_Admin_Streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    07 Admin Streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2496,7 +2685,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=93e3f95f">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e8188bcd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2515,12 +2704,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
-<span class="c1"># Register your models here.</span>
-<span class="kn">from</span> <span class="nn">app.models</span> <span class="kn">import</span> <span class="n">Aluno</span>
+<span class="kn">from</span> <span class="nn">app.models</span> <span class="kn">import</span> <span class="n">Aluno</span><span class="p">,</span> <span class="n">Employee</span><span class="p">,</span> <span class="n">Department</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-1">from django.contrib import admin
-# Register your models here.
-from app.models import Aluno</div>
+from app.models import Aluno, Employee, Department</div>
 </div>
 </div>
 </div>
@@ -2535,19 +2722,18 @@ from app.models import Aluno</div>
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">django</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">contrib</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> admin
-<span class="ansi-green-fg">      2</span> <span style="color: rgb(95,135,135)"># Register your models here.</span>
-<span class="ansi-green-fg">      3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">app</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">models</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Aluno
+Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 2</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">django</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">contrib</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> admin
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">app</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">models</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Aluno, Employee, Department
 
-<span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>: No module named 'django'</pre>
+<span class="ansi-red-intense-fg ansi-bold">ModuleNotFoundError</span>: No module named 'app'</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2b1e1e3a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e8c5f747">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2565,9 +2751,48 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 1</span>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Aluno</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">EmployeeAdmin</span><span class="p">(</span><span class="n">admin</span><span class="o">.</span><span class="n">ModelAdmin</span><span class="p">):</span>
+    <span class="n">list_display</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'role'</span><span class="p">,</span> <span class="s1">'department'</span><span class="p">)</span>
+    <span class="n">search_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'name'</span><span class="p">,</span><span class="s1">'role'</span><span class="p">,)</span>
+    <span class="n">list_filter</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'department'</span><span class="p">,)</span> <span class="c1">#filter</span>
+    <span class="n">ordering</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'name'</span><span class="p">,)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">admin.site.register(Aluno)</div>
+<div class="clipboard-copy-txt" id="cell-2">class EmployeeAdmin(admin.ModelAdmin):
+    list_display = ('name', 'role', 'department')
+    search_fields = ('name','role',)
+    list_filter = ('department',) #filter
+    ordering = ('name',)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=50631cf3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Aluno</span><span class="p">)</span>
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Employee</span><span class="p">,</span> <span class="n">EmployeeAdmin</span><span class="p">)</span>
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Department</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3">admin.site.register(Aluno)
+admin.site.register(Employee, EmployeeAdmin)
+admin.site.register(Department)</div>
 </div>
 </div>
 </div>
@@ -2581,11 +2806,62 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 1</span>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[2], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">admin</span><span style="color: rgb(98,98,98)">.</span>site<span style="color: rgb(98,98,98)">.</span>register(Aluno)
+<span class="ansi-red-intense-fg ansi-bold">ImproperlyConfigured</span>                      Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[3], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">admin</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">site</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">register</span>(Aluno)
+<span class="ansi-green-fg">      2</span> admin<span style="color: rgb(98,98,98)">.</span>site<span style="color: rgb(98,98,98)">.</span>register(Employee, EmployeeAdmin)
+<span class="ansi-green-fg">      3</span> admin<span style="color: rgb(98,98,98)">.</span>site<span style="color: rgb(98,98,98)">.</span>register(Department)
 
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'admin' is not defined</pre>
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8002\.venv\Lib\site-packages\django\utils\functional.py:251</span>, in <span class="ansi-cyan-fg">new_method_proxy.&lt;locals&gt;.inner</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args)</span>
+<span class="ansi-green-fg">    249</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">inner</span>(<span style="color: rgb(0,135,0)">self</span>, <span style="color: rgb(98,98,98)">*</span>args):
+<span class="ansi-green-fg">    250</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (_wrapped <span style="color: rgb(98,98,98)">:=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped) <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> empty:
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 251</span>         <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_setup</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">    252</span>         _wrapped <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped
+<span class="ansi-green-fg">    253</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> func(_wrapped, <span style="color: rgb(98,98,98)">*</span>args)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8002\.venv\Lib\site-packages\django\contrib\admin\sites.py:605</span>, in <span class="ansi-cyan-fg">DefaultAdminSite._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    604</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">_setup</span>(<span style="color: rgb(0,135,0)">self</span>):
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 605</span>     AdminSiteClass <span style="color: rgb(98,98,98)">=</span> import_string(<span class="ansi-yellow-bg">apps</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">get_app_config</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">admin</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span><span style="color: rgb(98,98,98)">.</span>default_site)
+<span class="ansi-green-fg">    606</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped <span style="color: rgb(98,98,98)">=</span> AdminSiteClass()
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8002\.venv\Lib\site-packages\django\apps\registry.py:156</span>, in <span class="ansi-cyan-fg">Apps.get_app_config</span><span class="ansi-blue-intense-fg ansi-bold">(self, app_label)</span>
+<span class="ansi-green-fg">    150</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">get_app_config</span>(<span style="color: rgb(0,135,0)">self</span>, app_label):
+<span class="ansi-green-fg">    151</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">    152</span> <span style="color: rgb(175,0,0)">    Import applications and returns an app config for the given label.</span>
+<span class="ansi-green-fg">    153</span> 
+<span class="ansi-green-fg">    154</span> <span style="color: rgb(175,0,0)">    Raise LookupError if no application exists with this label.</span>
+<span class="ansi-green-fg">    155</span> <span style="color: rgb(175,0,0)">    """</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 156</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">check_apps_ready</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">    157</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
+<span class="ansi-green-fg">    158</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>app_configs[app_label]
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8002\.venv\Lib\site-packages\django\apps\registry.py:137</span>, in <span class="ansi-cyan-fg">Apps.check_apps_ready</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    132</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">django</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">conf</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> settings
+<span class="ansi-green-fg">    134</span> <span style="color: rgb(95,135,135)"># If "not ready" is due to unconfigured settings, accessing</span>
+<span class="ansi-green-fg">    135</span> <span style="color: rgb(95,135,135)"># INSTALLED_APPS raises a more helpful ImproperlyConfigured</span>
+<span class="ansi-green-fg">    136</span> <span style="color: rgb(95,135,135)"># exception.</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 137</span> <span class="ansi-yellow-bg">settings</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">INSTALLED_APPS</span>
+<span class="ansi-green-fg">    138</span> <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> AppRegistryNotReady(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Apps aren</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">t loaded yet.</span><span style="color: rgb(175,0,0)">"</span>)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8002\.venv\Lib\site-packages\django\conf\__init__.py:81</span>, in <span class="ansi-cyan-fg">LazySettings.__getattr__</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
+<span class="ansi-green-fg">     79</span> <span style="color: rgb(175,0,0)">"""Return the value of a setting and cache it in self.__dict__."""</span>
+<span class="ansi-green-fg">     80</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (_wrapped <span style="color: rgb(98,98,98)">:=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped) <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> empty:
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 81</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_setup</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">     82</span>     _wrapped <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped
+<span class="ansi-green-fg">     83</span> val <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(_wrapped, name)
+
+File <span class="ansi-green-intense-fg ansi-bold">c:\Users\00661711722\Documents\PBE_24.2_8002\.venv\Lib\site-packages\django\conf\__init__.py:61</span>, in <span class="ansi-cyan-fg">LazySettings._setup</span><span class="ansi-blue-intense-fg ansi-bold">(self, name)</span>
+<span class="ansi-green-fg">     59</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> settings_module:
+<span class="ansi-green-fg">     60</span>     desc <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">setting </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)">"</span> <span style="color: rgb(98,98,98)">%</span> name) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> name <span class="ansi-bold" style="color: rgb(0,135,0)">else</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">settings</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 61</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> ImproperlyConfigured(
+<span class="ansi-green-fg">     62</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Requested </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)">, but settings are not configured. </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">     63</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">You must either define the environment variable </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)"> </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">     64</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">or call settings.configure() before accessing settings.</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">     65</span>         <span style="color: rgb(98,98,98)">%</span> (desc, ENVIRONMENT_VARIABLE)
+<span class="ansi-green-fg">     66</span>     )
+<span class="ansi-green-fg">     68</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_wrapped <span style="color: rgb(98,98,98)">=</span> Settings(settings_module)
+
+<span class="ansi-red-intense-fg ansi-bold">ImproperlyConfigured</span>: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.</pre>
 </div>
 </div>
 </div>
