@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../03_Rest_Streaming/">
+        <link rel="prev" href="../01_Projeto_Monitoring/">
       
       
-        <link rel="next" href="../05_Consume_Streaming/">
+        <link rel="next" href="../03_Rest_Monitoring/">
       
       
       <link rel="icon" href="../../../../../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>04 Shell Streaming - Projeto Back-End</title>
+        <title>02 Modelagem Monitoring - Projeto Back-End</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-iniciando-o-django-shell" class="md-skip">
+        <a href="#entidades-principais" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              04 Shell Streaming
+              02 Modelagem Monitoring
             
           </span>
         </div>
@@ -1325,48 +1325,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_Modelagem_Streaming/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    02 Modelagem Streaming
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03_Rest_Streaming/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    03 Rest Streaming
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1381,7 +1339,7 @@
           
   
   <span class="md-ellipsis">
-    04 Shell Streaming
+    02 Modelagem Monitoring
   </span>
   
 
@@ -1392,7 +1350,7 @@
         
   
   <span class="md-ellipsis">
-    04 Shell Streaming
+    02 Modelagem Monitoring
   </span>
   
 
@@ -1412,55 +1370,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-iniciando-o-django-shell" class="md-nav__link">
+  <a href="#entidades-principais" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Iniciando o Django Shell
+      Entidades Principais
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-importar-os-modelos" class="md-nav__link">
+  <a href="#modelo-relacional-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Importar os Modelos
+      Modelo Relacional de Dados
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-criando-instancias-de-modelos" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Criando Instâncias de Modelos
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Criando Instâncias de Modelos">
+    <nav class="md-nav" aria-label="Modelo Relacional de Dados">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#criando-um-usuario" class="md-nav__link">
+  <a href="#1-usuario-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando um Usuário
+      1. Usuário (User)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#criando-um-tipo-de-atividade" class="md-nav__link">
+  <a href="#2-atividade-activity" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando um Tipo de Atividade
+      2. Atividade (Activity)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#criando-uma-atividade-e-metricas-associadas" class="md-nav__link">
+  <a href="#3-tipo-de-atividade-activitytype" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando uma Atividade e Métricas Associadas
+      3. Tipo de Atividade (ActivityType)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-metrica-de-atividade-activitymetrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Métrica de Atividade (ActivityMetrics)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-historico-de-atividades-activityhistory" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Histórico de Atividades (ActivityHistory)
     </span>
   </a>
   
@@ -1472,171 +1439,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-consultando-dados" class="md-nav__link">
+  <a href="#relacionamentos" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Consultando Dados
+      Relacionamentos
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Consultando Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#listando-todas-as-atividades-de-um-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Listando Todas as Atividades de um Usuário
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultando-metricas-de-uma-atividade" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consultando Métricas de uma Atividade
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-explorando-relacionamentos-entre-modelos" class="md-nav__link">
+  <a href="#diagrama-relacional-simplificado" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Explorando Relacionamentos entre Modelos
+      Diagrama Relacional Simplificado
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="5. Explorando Relacionamentos entre Modelos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#acessar-todas-as-atividades-de-um-tipo-especifico-exemplo-corrida" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acessar Todas as Atividades de um Tipo Específico (Exemplo: Corrida)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultar-historico-de-atividades-do-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consultar Histórico de Atividades do Usuário
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-atualizando-dados" class="md-nav__link">
+  <a href="#consideracoes-finais" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Atualizando Dados
+      Considerações Finais:
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="6. Atualizando Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#atualizar-a-distancia-de-uma-atividade" class="md-nav__link">
-    <span class="md-ellipsis">
-      Atualizar a Distância de uma Atividade
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-excluindo-dados" class="md-nav__link">
+  <a href="#diagrama-de-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Excluindo Dados
+      Diagrama de Classes
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="7. Excluindo Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#excluir-uma-atividade" class="md-nav__link">
-    <span class="md-ellipsis">
-      Excluir uma Atividade
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-consultas-avancadas-com-filtros" class="md-nav__link">
+  <a href="#descricao-do-diagrama" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Consultas Avançadas com Filtros
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="8. Consultas Avançadas com Filtros">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#atividades-por-duracao-e-calorias" class="md-nav__link">
-    <span class="md-ellipsis">
-      Atividades por Duração e Calorias
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-utilizando-anotacoes-e-agregacoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Utilizando Anotações e Agregações
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="9. Utilizando Anotações e Agregações">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#media-de-velocidade-em-atividades-de-corrida" class="md-nav__link">
-    <span class="md-ellipsis">
-      Média de Velocidade em Atividades de Corrida
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resumo
+      Descrição do Diagrama:
     </span>
   </a>
   
@@ -1646,6 +1487,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Rest_Monitoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 Rest Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Shell_Monitoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 Shell Monitoring
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2740,55 +2623,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-iniciando-o-django-shell" class="md-nav__link">
+  <a href="#entidades-principais" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Iniciando o Django Shell
+      Entidades Principais
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-importar-os-modelos" class="md-nav__link">
+  <a href="#modelo-relacional-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Importar os Modelos
+      Modelo Relacional de Dados
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-criando-instancias-de-modelos" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Criando Instâncias de Modelos
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Criando Instâncias de Modelos">
+    <nav class="md-nav" aria-label="Modelo Relacional de Dados">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#criando-um-usuario" class="md-nav__link">
+  <a href="#1-usuario-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando um Usuário
+      1. Usuário (User)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#criando-um-tipo-de-atividade" class="md-nav__link">
+  <a href="#2-atividade-activity" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando um Tipo de Atividade
+      2. Atividade (Activity)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#criando-uma-atividade-e-metricas-associadas" class="md-nav__link">
+  <a href="#3-tipo-de-atividade-activitytype" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando uma Atividade e Métricas Associadas
+      3. Tipo de Atividade (ActivityType)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-metrica-de-atividade-activitymetrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Métrica de Atividade (ActivityMetrics)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-historico-de-atividades-activityhistory" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Histórico de Atividades (ActivityHistory)
     </span>
   </a>
   
@@ -2800,171 +2692,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-consultando-dados" class="md-nav__link">
+  <a href="#relacionamentos" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Consultando Dados
+      Relacionamentos
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Consultando Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#listando-todas-as-atividades-de-um-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Listando Todas as Atividades de um Usuário
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultando-metricas-de-uma-atividade" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consultando Métricas de uma Atividade
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-explorando-relacionamentos-entre-modelos" class="md-nav__link">
+  <a href="#diagrama-relacional-simplificado" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Explorando Relacionamentos entre Modelos
+      Diagrama Relacional Simplificado
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="5. Explorando Relacionamentos entre Modelos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#acessar-todas-as-atividades-de-um-tipo-especifico-exemplo-corrida" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acessar Todas as Atividades de um Tipo Específico (Exemplo: Corrida)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultar-historico-de-atividades-do-usuario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consultar Histórico de Atividades do Usuário
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-atualizando-dados" class="md-nav__link">
+  <a href="#consideracoes-finais" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Atualizando Dados
+      Considerações Finais:
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="6. Atualizando Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#atualizar-a-distancia-de-uma-atividade" class="md-nav__link">
-    <span class="md-ellipsis">
-      Atualizar a Distância de uma Atividade
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-excluindo-dados" class="md-nav__link">
+  <a href="#diagrama-de-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Excluindo Dados
+      Diagrama de Classes
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="7. Excluindo Dados">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#excluir-uma-atividade" class="md-nav__link">
-    <span class="md-ellipsis">
-      Excluir uma Atividade
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-consultas-avancadas-com-filtros" class="md-nav__link">
+  <a href="#descricao-do-diagrama" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Consultas Avançadas com Filtros
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="8. Consultas Avançadas com Filtros">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#atividades-por-duracao-e-calorias" class="md-nav__link">
-    <span class="md-ellipsis">
-      Atividades por Duração e Calorias
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-utilizando-anotacoes-e-agregacoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Utilizando Anotações e Agregações
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="9. Utilizando Anotações e Agregações">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#media-de-velocidade-em-atividades-de-corrida" class="md-nav__link">
-    <span class="md-ellipsis">
-      Média de Velocidade em Atividades de Corrida
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resumo
+      Descrição do Diagrama:
     </span>
   </a>
   
@@ -2988,120 +2754,344 @@
   
 
 
-  <h1>04 Shell Streaming</h1>
+  <h1>02 Modelagem Monitoring</h1>
 
-<p>O Django Shell é uma ferramenta poderosa que permite interagir com o banco de dados e os componentes do Django diretamente na linha de comando, ideal para testar modelos, criar dados de exemplo, ou depurar problemas sem a necessidade de criar views e templates. No contexto do nosso app de monitoramento de atividades esportivas, o Django Shell pode ser útil para:</p>
+<p>A modelagem de dados para um app de monitoramento de atividades esportivas precisa garantir uma estrutura que permita a captura de informações detalhadas sobre as atividades (distância, velocidade, calorias, etc.), gerenciamento de perfis de usuários, e o armazenamento do histórico de atividades. A seguir, apresento uma proposta de modelagem de dados com tabelas principais, seus atributos e relacionamentos:</p>
+<h3 id="entidades-principais">Entidades Principais</h3>
 <ol>
-<li><strong>Criar e Manipular Instâncias de Modelos</strong>,</li>
-<li><strong>Consultar Dados</strong>,</li>
-<li><strong>Atualizar e Excluir Dados</strong>,</li>
-<li><strong>Explorar Relacionamentos entre Modelos</strong>.</li>
+<li><strong>Usuário (<code>User</code>)</strong> – Representa os usuários da plataforma, contendo informações de perfil.</li>
+<li><strong>Atividade (<code>Activity</code>)</strong> – Representa cada atividade esportiva realizada, como corridas, ciclismo, natação, etc.</li>
+<li><strong>Tipo de Atividade (<code>ActivityType</code>)</strong> – Define o tipo de esporte realizado (corrida, ciclismo, etc.).</li>
+<li><strong>Métrica de Atividade (<code>ActivityMetrics</code>)</strong> – Armazena as informações específicas da atividade, como distância, velocidade e calorias.</li>
+<li><strong>Histórico de Atividades (<code>ActivityHistory</code>)</strong> – Liga o usuário às atividades realizadas, permitindo consultas sobre o desempenho do usuário ao longo do tempo.</li>
 </ol>
-<p>Aqui estão alguns exemplos de como utilizar o Django Shell com as classes que criamos.</p>
-<h3 id="1-iniciando-o-django-shell">1. <strong>Iniciando o Django Shell</strong></h3>
-<p>Para abrir o Django Shell, execute o comando abaixo:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>shell
+<h3 id="modelo-relacional-de-dados">Modelo Relacional de Dados</h3>
+<h4 id="1-usuario-user">1. <strong>Usuário (<code>User</code>)</strong></h4>
+<p>Tabela para armazenar as informações do perfil do usuário.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>UUID</td>
+<td>Identificador único do usuário</td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td>VARCHAR(50)</td>
+<td>Nome de usuário</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>VARCHAR(100)</td>
+<td>Email do usuário</td>
+</tr>
+<tr>
+<td><code>password_hash</code></td>
+<td>VARCHAR(255)</td>
+<td>Hash da senha</td>
+</tr>
+<tr>
+<td><code>first_name</code></td>
+<td>VARCHAR(50)</td>
+<td>Primeiro nome</td>
+</tr>
+<tr>
+<td><code>last_name</code></td>
+<td>VARCHAR(50)</td>
+<td>Último nome</td>
+</tr>
+<tr>
+<td><code>date_joined</code></td>
+<td>TIMESTAMP</td>
+<td>Data de criação do perfil</td>
+</tr>
+<tr>
+<td><code>last_login</code></td>
+<td>TIMESTAMP</td>
+<td>Último login</td>
+</tr>
+<tr>
+<td><code>profile_picture</code></td>
+<td>VARCHAR(255)</td>
+<td>URL da imagem de perfil</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-atividade-activity">2. <strong>Atividade (<code>Activity</code>)</strong></h4>
+<p>Tabela para armazenar detalhes sobre cada atividade realizada.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>UUID</td>
+<td>Identificador único da atividade</td>
+</tr>
+<tr>
+<td><code>activity_type_id</code></td>
+<td>UUID</td>
+<td>Relaciona com o tipo de atividade</td>
+</tr>
+<tr>
+<td><code>user_id</code></td>
+<td>UUID</td>
+<td>Relaciona com o usuário</td>
+</tr>
+<tr>
+<td><code>start_time</code></td>
+<td>TIMESTAMP</td>
+<td>Data e hora de início da atividade</td>
+</tr>
+<tr>
+<td><code>end_time</code></td>
+<td>TIMESTAMP</td>
+<td>Data e hora de término da atividade</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>VARCHAR(255)</td>
+<td>Local onde foi realizada a atividade</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>TEXT</td>
+<td>Descrição da atividade (opcional)</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>TIMESTAMP</td>
+<td>Data de criação do registro</td>
+</tr>
+<tr>
+<td><code>updated_at</code></td>
+<td>TIMESTAMP</td>
+<td>Data da última atualização</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-tipo-de-atividade-activitytype">3. <strong>Tipo de Atividade (<code>ActivityType</code>)</strong></h4>
+<p>Tabela para armazenar os diferentes tipos de atividades esportivas.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>UUID</td>
+<td>Identificador único do tipo</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>VARCHAR(50)</td>
+<td>Nome do tipo de atividade (ex.: corrida, ciclismo)</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>TEXT</td>
+<td>Descrição adicional (opcional)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-metrica-de-atividade-activitymetrics">4. <strong>Métrica de Atividade (<code>ActivityMetrics</code>)</strong></h4>
+<p>Tabela para armazenar as métricas das atividades, como distância percorrida, tempo, velocidade média, e calorias queimadas.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>UUID</td>
+<td>Identificador único da métrica</td>
+</tr>
+<tr>
+<td><code>activity_id</code></td>
+<td>UUID</td>
+<td>Relaciona com a atividade</td>
+</tr>
+<tr>
+<td><code>distance_km</code></td>
+<td>FLOAT</td>
+<td>Distância percorrida em quilômetros</td>
+</tr>
+<tr>
+<td><code>duration_minutes</code></td>
+<td>FLOAT</td>
+<td>Duração da atividade em minutos</td>
+</tr>
+<tr>
+<td><code>avg_speed_kmh</code></td>
+<td>FLOAT</td>
+<td>Velocidade média em km/h</td>
+</tr>
+<tr>
+<td><code>calories_burned</code></td>
+<td>FLOAT</td>
+<td>Calorias queimadas</td>
+</tr>
+<tr>
+<td><code>elevation_gain</code></td>
+<td>FLOAT</td>
+<td>Ganho de elevação em metros (opcional)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-historico-de-atividades-activityhistory">5. <strong>Histórico de Atividades (<code>ActivityHistory</code>)</strong></h4>
+<p>Essa tabela relaciona usuários com suas atividades, permitindo consultas históricas.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>UUID</td>
+<td>Identificador único</td>
+</tr>
+<tr>
+<td><code>user_id</code></td>
+<td>UUID</td>
+<td>Relaciona com o usuário</td>
+</tr>
+<tr>
+<td><code>activity_id</code></td>
+<td>UUID</td>
+<td>Relaciona com a atividade</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>TIMESTAMP</td>
+<td>Data de registro no histórico</td>
+</tr>
+</tbody>
+</table>
+<h3 id="relacionamentos">Relacionamentos</h3>
+<ol>
+<li><strong>Usuário (User) - Atividade (Activity)</strong>: Um usuário pode ter várias atividades, mas uma atividade pertence a apenas um usuário (relação 1:N).</li>
+<li><strong>Atividade (Activity) - Métrica de Atividade (ActivityMetrics)</strong>: Cada atividade tem um conjunto de métricas associado, como distância e calorias (relação 1:1).</li>
+<li><strong>Atividade (Activity) - Tipo de Atividade (ActivityType)</strong>: Cada atividade pertence a um tipo (corrida, ciclismo, etc.), mas o tipo pode ser associado a várias atividades (relação 1:N).</li>
+<li><strong>Histórico de Atividades (ActivityHistory)</strong>: Relaciona usuários com atividades realizadas, permitindo consultas históricas.</li>
+</ol>
+<h3 id="diagrama-relacional-simplificado">Diagrama Relacional Simplificado</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[User] -----------&lt; [ActivityHistory] &gt;----------- [Activity]
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> (1:N)                (N:1)                          (1:N)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>[Activity] ----------- [ActivityMetrics]
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> (1:1)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>[Activity] -----------&lt; [ActivityType]
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> (N:1)
 </span></code></pre></div>
-<h3 id="2-importar-os-modelos">2. <strong>Importar os Modelos</strong></h3>
-<p>Após abrir o shell, importe os modelos que vamos utilizar:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="kn">import</span> <span class="n">User</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">activities.models</span> <span class="kn">import</span> <span class="n">Activity</span><span class="p">,</span> <span class="n">ActivityType</span><span class="p">,</span> <span class="n">ActivityMetrics</span><span class="p">,</span> <span class="n">ActivityHistory</span>
-</span></code></pre></div>
-<h3 id="3-criando-instancias-de-modelos">3. <strong>Criando Instâncias de Modelos</strong></h3>
-<p>Primeiro, vamos criar um usuário para associá-lo às atividades esportivas.</p>
-<h4 id="criando-um-usuario">Criando um Usuário</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s1">&#39;john_doe&#39;</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s1">&#39;john@example.com&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;password123&#39;</span><span class="p">)</span>
-</span></code></pre></div>
-<h4 id="criando-um-tipo-de-atividade">Criando um Tipo de Atividade</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">running_type</span> <span class="o">=</span> <span class="n">ActivityType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Running&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Running activity&#39;</span><span class="p">)</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">cycling_type</span> <span class="o">=</span> <span class="n">ActivityType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Cycling&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Cycling activity&#39;</span><span class="p">)</span>
-</span></code></pre></div>
-<h4 id="criando-uma-atividade-e-metricas-associadas">Criando uma Atividade e Métricas Associadas</h4>
-<p>Podemos criar uma atividade de corrida e associá-la ao usuário e tipo de atividade que criamos.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Criando uma nova atividade</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">activity</span> <span class="o">=</span> <span class="n">Activity</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">activity_type</span><span class="o">=</span><span class="n">running_type</span><span class="p">,</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">start_time</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">end_time</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">location</span><span class="o">=</span><span class="s2">&quot;Central Park&quot;</span><span class="p">,</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Morning run&quot;</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">)</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1"># Criando métricas para essa atividade</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">metrics</span> <span class="o">=</span> <span class="n">ActivityMetrics</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="n">activity</span><span class="o">=</span><span class="n">activity</span><span class="p">,</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">distance_km</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">duration_minutes</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="n">avg_speed_kmh</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="n">calories_burned</span><span class="o">=</span><span class="mi">300</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="4-consultando-dados">4. <strong>Consultando Dados</strong></h3>
-<h4 id="listando-todas-as-atividades-de-um-usuario">Listando Todas as Atividades de um Usuário</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">activities</span> <span class="o">=</span> <span class="n">Activity</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">for</span> <span class="n">activity</span> <span class="ow">in</span> <span class="n">activities</span><span class="p">:</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
-</span></code></pre></div>
-<h4 id="consultando-metricas-de-uma-atividade">Consultando Métricas de uma Atividade</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">metrics</span> <span class="o">=</span> <span class="n">ActivityMetrics</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">activity</span><span class="o">=</span><span class="n">activity</span><span class="p">)</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Distance: </span><span class="si">{</span><span class="n">metrics</span><span class="o">.</span><span class="n">distance_km</span><span class="si">}</span><span class="s2"> km, Calories burned: </span><span class="si">{</span><span class="n">metrics</span><span class="o">.</span><span class="n">calories_burned</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="5-explorando-relacionamentos-entre-modelos">5. <strong>Explorando Relacionamentos entre Modelos</strong></h3>
-<h4 id="acessar-todas-as-atividades-de-um-tipo-especifico-exemplo-corrida">Acessar Todas as Atividades de um Tipo Específico (Exemplo: Corrida)</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">running_activities</span> <span class="o">=</span> <span class="n">Activity</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">activity_type</span><span class="o">=</span><span class="n">running_type</span><span class="p">)</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">for</span> <span class="n">act</span> <span class="ow">in</span> <span class="n">running_activities</span><span class="p">:</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">act</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">username</span><span class="si">}</span><span class="s2"> ran at </span><span class="si">{</span><span class="n">act</span><span class="o">.</span><span class="n">location</span><span class="si">}</span><span class="s2"> on </span><span class="si">{</span><span class="n">act</span><span class="o">.</span><span class="n">start_time</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h4 id="consultar-historico-de-atividades-do-usuario">Consultar Histórico de Atividades do Usuário</h4>
-<p>Primeiro, criaremos registros de histórico para esse usuário:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">history_entry</span> <span class="o">=</span> <span class="n">ActivityHistory</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">activity</span><span class="o">=</span><span class="n">activity</span><span class="p">)</span>
-</span></code></pre></div>
-<p>Agora, para listar o histórico de atividades do usuário:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">history</span> <span class="o">=</span> <span class="n">ActivityHistory</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">history</span><span class="p">:</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Activity on </span><span class="si">{</span><span class="n">entry</span><span class="o">.</span><span class="n">created_at</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">entry</span><span class="o">.</span><span class="n">activity</span><span class="o">.</span><span class="n">description</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="6-atualizando-dados">6. <strong>Atualizando Dados</strong></h3>
-<h4 id="atualizar-a-distancia-de-uma-atividade">Atualizar a Distância de uma Atividade</h4>
-<p>Vamos dizer que o usuário registrou incorretamente a distância da corrida e precisamos atualizá-la.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">metrics</span> <span class="o">=</span> <span class="n">ActivityMetrics</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">activity</span><span class="o">=</span><span class="n">activity</span><span class="p">)</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">metrics</span><span class="o">.</span><span class="n">distance_km</span> <span class="o">=</span> <span class="mf">5.5</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">metrics</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated distance: </span><span class="si">{</span><span class="n">metrics</span><span class="o">.</span><span class="n">distance_km</span><span class="si">}</span><span class="s2"> km&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="7-excluindo-dados">7. <strong>Excluindo Dados</strong></h3>
-<h4 id="excluir-uma-atividade">Excluir uma Atividade</h4>
-<p>Se o usuário deseja remover uma atividade, você pode fazer isso facilmente no shell.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">activity_to_delete</span> <span class="o">=</span> <span class="n">Activity</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">activity</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">activity_to_delete</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
-</span></code></pre></div>
-<h3 id="8-consultas-avancadas-com-filtros">8. <strong>Consultas Avançadas com Filtros</strong></h3>
-<h4 id="atividades-por-duracao-e-calorias">Atividades por Duração e Calorias</h4>
-<p>Suponha que você queira todas as atividades onde a duração foi superior a 30 minutos e as calorias queimadas foram acima de 250.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">filtered_activities</span> <span class="o">=</span> <span class="n">ActivityMetrics</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">duration_minutes__gt</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">calories_burned__gt</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">for</span> <span class="n">act_metrics</span> <span class="ow">in</span> <span class="n">filtered_activities</span><span class="p">:</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Activity: </span><span class="si">{</span><span class="n">act_metrics</span><span class="o">.</span><span class="n">activity</span><span class="o">.</span><span class="n">description</span><span class="si">}</span><span class="s2">, Calories: </span><span class="si">{</span><span class="n">act_metrics</span><span class="o">.</span><span class="n">calories_burned</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="9-utilizando-anotacoes-e-agregacoes">9. <strong>Utilizando Anotações e Agregações</strong></h3>
-<h4 id="media-de-velocidade-em-atividades-de-corrida">Média de Velocidade em Atividades de Corrida</h4>
-<p>Para calcular a média de velocidade em atividades de corrida para um usuário:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span> <span class="nn">django.db.models</span> <span class="kn">import</span> <span class="n">Avg</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">average_speed</span> <span class="o">=</span> <span class="n">ActivityMetrics</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">activity__activity_type</span><span class="o">=</span><span class="n">running_type</span><span class="p">)</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">Avg</span><span class="p">(</span><span class="s1">&#39;avg_speed_kmh&#39;</span><span class="p">))</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average Running Speed: </span><span class="si">{</span><span class="n">average_speed</span><span class="p">[</span><span class="s1">&#39;avg_speed_kmh__avg&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="resumo">Resumo</h3>
-<p>Essas operações demonstram o potencial do Django Shell para testar interações e manipulações de dados no desenvolvimento do app de monitoramento de atividades esportivas, auxiliando em cenários como:</p>
+<h3 id="consideracoes-finais">Considerações Finais:</h3>
 <ul>
-<li><strong>Inserção de dados</strong> para criar e vincular atividades e métricas;</li>
-<li><strong>Consultas</strong> complexas para ver histórico de atividades e resultados;</li>
-<li><strong>Atualizações e exclusões</strong> para ajuste de informações;</li>
-<li><strong>Exploração de relacionamentos</strong> para consultas cruzadas.</li>
+<li>
+<p><strong>Performance:</strong> É importante otimizar consultas para operações frequentes, como listar atividades de um usuário, calcular métricas agregadas (ex.: calorias queimadas em uma semana), ou visualizar um histórico de atividades.</p>
+</li>
+<li>
+<p><strong>Indexação:</strong> Usar índices em campos de consulta frequente, como <code>user_id</code> em <code>Activity</code> e <code>ActivityHistory</code>, para melhorar a performance.</p>
+</li>
+<li>
+<p><strong>Segurança:</strong> Armazenar senhas com hashes seguros (ex.: bcrypt) e garantir proteção de dados sensíveis com criptografia quando necessário.</p>
+</li>
+<li>
+<p><strong>Escalabilidade:</strong> Se a quantidade de dados for muito grande, pode-se considerar particionamento de tabelas (sharding) ou o uso de bancos de dados NoSQL para determinadas informações de alta carga, como dados de atividades em tempo real.</p>
+</li>
 </ul>
-<p>Essas práticas também ajudam a garantir que a lógica do app está correta antes de implementar a interface da API REST.</p>
+<p>Essa modelagem oferece uma base sólida para o gerenciamento de perfis de usuários e histórico de atividades, além de suportar o upload e o monitoramento das métricas esportivas.</p>
+<h3 id="diagrama-de-classes">Diagrama de Classes</h3>
+<p>Para criar um diagrama de classes com base na modelagem de dados apresentada, usaremos o seguinte código PlantUML. Ele define as classes correspondentes às tabelas mencionadas, seus atributos e os relacionamentos entre elas.</p>
+<p>Aqui está o código PlantUML para o diagrama de classes:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>@startuml
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>class User {
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  +UUID id
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  +String username
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  +String email
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  +String password_hash
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  +String first_name
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  +String last_name
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  +DateTime date_joined
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  +DateTime last_login
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  +String profile_picture
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>}
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>class Activity {
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  +UUID id
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  +UUID activity_type_id
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  +UUID user_id
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  +DateTime start_time
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  +DateTime end_time
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  +String location
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  +String description
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  +DateTime created_at
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  +DateTime updated_at
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>}
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>class ActivityType {
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>  +UUID id
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>  +String name
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>  +String description
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>}
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>class ActivityMetrics {
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>  +UUID id
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>  +UUID activity_id
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>  +float distance_km
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>  +float duration_minutes
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>  +float avg_speed_kmh
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>  +float calories_burned
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>  +float elevation_gain
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>}
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>class ActivityHistory {
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>  +UUID id
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>  +UUID user_id
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>  +UUID activity_id
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>  +DateTime created_at
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>}
+</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>User &quot;1&quot; -- &quot;0..*&quot; ActivityHistory : &quot;has&quot;
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>ActivityHistory &quot;0..*&quot; -- &quot;1&quot; Activity : &quot;logs&quot;
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>User &quot;1&quot; -- &quot;0..*&quot; Activity : &quot;performs&quot;
+</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>Activity &quot;1&quot; -- &quot;1&quot; ActivityMetrics : &quot;has&quot;
+</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>Activity &quot;0..*&quot; -- &quot;1&quot; ActivityType : &quot;belongs to&quot;
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>
+</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>@enduml
+</span></code></pre></div>
+<h3 id="descricao-do-diagrama">Descrição do Diagrama:</h3>
+<ul>
+<li><strong>User</strong> tem um relacionamento de 1:N com <strong>ActivityHistory</strong>, indicando que um usuário pode ter vários registros de atividades em seu histórico.</li>
+<li><strong>ActivityHistory</strong> tem um relacionamento N:1 com <strong>Activity</strong>, representando que o histórico registra várias atividades, mas cada registro está relacionado a apenas uma atividade.</li>
+<li><strong>User</strong> também tem um relacionamento de 1:N com <strong>Activity</strong>, indicando que um usuário pode realizar várias atividades.</li>
+<li><strong>Activity</strong> tem um relacionamento de 1:1 com <strong>ActivityMetrics</strong>, indicando que cada atividade possui um conjunto de métricas associado.</li>
+<li><strong>Activity</strong> também tem um relacionamento de N:1 com <strong>ActivityType</strong>, indicando que várias atividades podem pertencer ao mesmo tipo (por exemplo, corrida ou ciclismo).</li>
+</ul>
+<p>Este diagrama pode ser gerado usando o PlantUML, e ele visualiza as principais classes e relacionamentos do sistema de monitoramento de atividades esportivas descrito anteriormente.</p>
 
 
 
@@ -3137,7 +3127,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../03_Rest_Streaming/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 03 Rest Streaming">
+          <a href="../01_Projeto_Monitoring/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 01 Projeto Monitoring">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -3147,20 +3137,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                03 Rest Streaming
+                01 Projeto Monitoring
               </div>
             </div>
           </a>
         
         
           
-          <a href="../05_Consume_Streaming/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 05 Consume Streaming">
+          <a href="../03_Rest_Monitoring/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 03 Rest Monitoring">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                05 Consume Streaming
+                03 Rest Monitoring
               </div>
             </div>
             <div class="md-footer__button md-icon">
