@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../../_Disciplina/Roteiros/Django/AppStreaming/07_Admin_Streaming/">
+        <link rel="prev" href="../09_Swagger/">
       
       
-        <link rel="next" href="../Brainstorm/">
+        <link rel="next" href="../../AppStreaming/01_Projeto_Streaming/">
       
       
-      <link rel="icon" href="../../images/favicon.png">
+      <link rel="icon" href="../../../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
-        <title>5W2H - Projeto Back-End</title>
+        <title>MVC - Projeto Back-End</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#1-configuracao-do-projeto-aspnet-core-mvc" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -86,9 +86,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../.." title="Projeto Back-End" class="md-header__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
+    <a href="../../../../.." title="Projeto Back-End" class="md-header__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
       
-  <img src="../../assets/ibmec_logo.png" alt="logo">
+  <img src="../../../../../assets/ibmec_logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5W2H
+              MVC
             
           </span>
         </div>
@@ -180,7 +180,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -195,11 +195,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../_Disciplina/aulas/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../aulas/" class="md-tabs__link">
           
   
    Disciplina
@@ -213,13 +215,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../base/5w2h/" class="md-tabs__link">
           
   
   Base
@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../iteracao/iteracao1/" class="md-tabs__link">
+        <a href="../../../../../iteracao/iteracao1/" class="md-tabs__link">
           
   
   Iteracao
@@ -255,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../modelagem/das/" class="md-tabs__link">
+        <a href="../../../../../modelagem/das/" class="md-tabs__link">
           
   
   Modelagem
@@ -294,9 +294,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Projeto Back-End" class="md-nav__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
+    <a href="../../../../.." title="Projeto Back-End" class="md-nav__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
       
-  <img src="../../assets/ibmec_logo.png" alt="logo">
+  <img src="../../../../../assets/ibmec_logo.png" alt="logo">
 
     </a>
     Projeto Back-End
@@ -323,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -340,23 +340,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -367,7 +372,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
              Disciplina
@@ -381,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/aulas/" class="md-nav__link">
+      <a href="../../../../aulas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -402,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/github/" class="md-nav__link">
+      <a href="../../../../github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/mkdocs/" class="md-nav__link">
+      <a href="../../../../mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/manage/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/manage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/__init__/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/__init__/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/admin/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/admin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/apps/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/models/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/tests/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/views/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/views/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/0001_initial/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/0001_initial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/0002_employee/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/0002_employee/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/0003_department_alter_employee_department/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/0003_department_alter_employee_department/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/__init__/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/__init__/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -881,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/__init__/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/__init__/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/asgi/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/asgi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/settings/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/urls/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/urls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/wsgi/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/wsgi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,6 +1012,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1016,11 +1023,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -1034,7 +1041,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Roteiros
@@ -1086,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/introsqlite/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/introsqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1107,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/pysqlite/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/pysqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1128,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/sqlite/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/teste/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/teste/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1175,6 +1182,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1184,11 +1193,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
@@ -1202,7 +1211,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_2">
             <span class="md-nav__icon md-icon"></span>
             Django
@@ -1216,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/Intro%20Django/" class="md-nav__link">
+      <a href="../../Intro%20Django/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1237,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/RestDjango/" class="md-nav__link">
+      <a href="../../RestDjango/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1255,6 +1264,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1264,11 +1275,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_2_3" id="__nav_2_5_2_3_label" tabindex="0">
@@ -1282,7 +1293,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_2_3">
             <span class="md-nav__icon md-icon"></span>
             AppMonitoring
@@ -1296,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/01_Projeto_Monitoring/" class="md-nav__link">
+      <a href="../01_Projeto_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1317,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/01_Regras_Neg%C3%B3cio_Monitoring/" class="md-nav__link">
+      <a href="../01_Regras_Neg%C3%B3cio_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1338,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/02_Modelagem_Monitoring/" class="md-nav__link">
+      <a href="../02_Modelagem_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1359,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/03_Rest_Monitoring/" class="md-nav__link">
+      <a href="../03_Rest_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1380,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/04_Shell_Monitoring/" class="md-nav__link">
+      <a href="../04_Shell_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,7 +1412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/05_Consume_Streaming/" class="md-nav__link">
+      <a href="../05_Consume_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1422,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/06_Consume_Streaming_Web/" class="md-nav__link">
+      <a href="../06_Consume_Streaming_Web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1443,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/07_Admin_Streaming/" class="md-nav__link">
+      <a href="../07_Admin_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1464,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/08_CorsOrigin/" class="md-nav__link">
+      <a href="../08_CorsOrigin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1485,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/09_Swagger/" class="md-nav__link">
+      <a href="../09_Swagger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1503,10 +1514,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/MVC/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MVC
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1515,6 +1544,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-configuracao-do-projeto-aspnet-core-mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configuração do Projeto ASP.NET Core MVC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-instalacao-do-entity-framework-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Instalação do Entity Framework Core
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criacao-do-modelo-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Criação do Modelo Employee
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuracao-do-contexto-do-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Configuração do Contexto do Banco de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-criacao-da-migration-e-atualizacao-do-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Criação da Migration e Atualização do Banco de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-criacao-do-controller-employeecontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Criação do Controller EmployeeController
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-configuracao-das-rotas-e-teste-da-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Configuração das Rotas e Teste da Aplicação
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1573,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/01_Projeto_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/01_Projeto_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1594,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/02_Modelagem_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/02_Modelagem_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1615,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/03_Rest_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/03_Rest_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1636,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/04_Shell_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/04_Shell_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1657,7 +1767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/05_Consume_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/05_Consume_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1678,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/06_Consume_Streaming_Web/" class="md-nav__link">
+      <a href="../../AppStreaming/06_Consume_Streaming_Web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1699,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/07_Admin_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/07_Admin_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1748,28 +1858,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1780,7 +1885,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Base
@@ -1791,28 +1896,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    5W2H
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../base/5w2h/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,120 +1908,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introdução
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metodologia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Metodologia
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questoes-5w2h" class="md-nav__link">
-    <span class="md-ellipsis">
-      Questões 5W2H
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Questões 5W2H">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#versao-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 1.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-geral" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão geral
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#versao-20" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 2.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-produto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão produto
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias-bibliograficas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Referências Bibliográficas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#autores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Autor(es)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1947,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Brainstorm/" class="md-nav__link">
+      <a href="../../../../../base/Brainstorm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1968,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documento_de_visao/" class="md-nav__link">
+      <a href="../../../../../base/documento_de_visao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1989,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../entrevista/" class="md-nav__link">
+      <a href="../../../../../base/entrevista/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2010,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mapa_mental/" class="md-nav__link">
+      <a href="../../../../../base/mapa_mental/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2031,7 +2004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodologia/" class="md-nav__link">
+      <a href="../../../../../base/metodologia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2052,7 +2025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pesquisa/" class="md-nav__link">
+      <a href="../../../../../base/pesquisa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2073,7 +2046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototipo_alta_fidelidade/" class="md-nav__link">
+      <a href="../../../../../base/prototipo_alta_fidelidade/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2139,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao1/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2160,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao2/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2181,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao3/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2202,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao4/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2223,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao5/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2244,7 +2217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao6/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2265,7 +2238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao7/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2331,7 +2304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/das/" class="md-nav__link">
+      <a href="../../../../../modelagem/das/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2352,7 +2325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/diagrama_de_classes/" class="md-nav__link">
+      <a href="../../../../../modelagem/diagrama_de_classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2411,7 +2384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/Casos%20de%20Uso/Exemplo%20Biblioteca%20Digital/" class="md-nav__link">
+      <a href="../../../../../modelagem/Casos%20de%20Uso/Exemplo%20Biblioteca%20Digital/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2432,7 +2405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/Casos%20de%20Uso/casosdeuso/" class="md-nav__link">
+      <a href="../../../../../modelagem/Casos%20de%20Uso/casosdeuso/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2499,7 +2472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/Classes/classes/" class="md-nav__link">
+      <a href="../../../../../modelagem/Classes/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2566,7 +2539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/ProceduralPoo/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/ProceduralPoo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2587,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/kyvi/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/kyvi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2608,7 +2581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/poo/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/poo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2629,7 +2602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/pooaula/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/pooaula/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2683,96 +2656,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
+  <a href="#1-configuracao-do-projeto-aspnet-core-mvc" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdução
+      1. Configuração do Projeto ASP.NET Core MVC
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#metodologia" class="md-nav__link">
+  <a href="#2-instalacao-do-entity-framework-core" class="md-nav__link">
     <span class="md-ellipsis">
-      Metodologia
+      2. Instalação do Entity Framework Core
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#questoes-5w2h" class="md-nav__link">
+  <a href="#3-criacao-do-modelo-employee" class="md-nav__link">
     <span class="md-ellipsis">
-      Questões 5W2H
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Questões 5W2H">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#versao-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 1.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-geral" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão geral
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#versao-20" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 2.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-produto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão produto
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
+      3. Criação do Modelo Employee
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias-bibliograficas" class="md-nav__link">
+  <a href="#4-configuracao-do-contexto-do-banco-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
-      Referências Bibliográficas
+      4. Configuração do Contexto do Banco de Dados
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#autores" class="md-nav__link">
+  <a href="#5-criacao-da-migration-e-atualizacao-do-banco-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
-      Autor(es)
+      5. Criação da Migration e Atualização do Banco de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-criacao-do-controller-employeecontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Criação do Controller EmployeeController
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-configuracao-das-rotas-e-teste-da-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Configuração das Rotas e Teste da Aplicação
     </span>
   </a>
   
@@ -2796,140 +2736,113 @@
   
 
 
-  <h1>5W2H</h1>
+  <h1>MVC</h1>
 
-<h2 id="introducao">Introdução</h2>
-<p align = "justify">
-    O 5W2H é uma ferramenta administrativa  que pode ser utilizada para diferentes contextos dentro de uma organização, como na organização para planejamento estratégico e guia na execução de ações. O 5W2H baseia-se em 7 perguntas (What?, Why?, Where?, Who?, When?, How? e How much?), com o intuito de esclarecer e organizar ideias. A ferramenta será utilizada como um guia de ações, tornando os objetivos mais evidentes para a equipe, auxiliando na compreensão, organização e tomadas de decisões no projeto.
-</p>
-
-<h2 id="metodologia">Metodologia</h2>
-<p align = "justify">
-    A equipe se reuniu para esclarecimento sobre o tema do projeto, a partir dos pontos debatidos foi possível responder às questões do 5W2H.  
-</p>
-
-<h2 id="questoes-5w2h">Questões 5W2H</h2>
-<h3 id="versao-10">Versão 1.0</h3>
-<h3 id="visao-geral">Visão geral</h3>
-<table>
-<thead>
-<tr>
-<th>Questão</th>
-<th>Resposta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What?(O que deve será feito?)</td>
-<td>Aplicativo Web App para....</td>
-</tr>
-<tr>
-<td>Why? (Por que isso será feito?)</td>
-<td>Para auxiliar...</td>
-</tr>
-<tr>
-<td>Where? (Onde será feito?)</td>
-<td>O trabalho será realizado....</td>
-</tr>
-<tr>
-<td>When? (Quando será feito?)</td>
-<td>Durante o semestre de XXXX</td>
-</tr>
-<tr>
-<td>Who? (Quem irá fazer?)</td>
-<td>A equipe é formada pelos alunos...</td>
-</tr>
-<tr>
-<td>How? (Como será feito?)</td>
-<td>Utilizando metodologia RUP/UP e ferramentas como...</td>
-</tr>
-<tr>
-<td>How much? (Quanto custará?)</td>
-<td>O custo do projeto será o tempo e esforço para o desenvolvimento da aplicação</td>
-</tr>
-</tbody>
-</table>
-<h3 id="versao-20">Versão 2.0</h3>
-<h3 id="visao-produto">Visão produto</h3>
-<table>
-<thead>
-<tr>
-<th>Questão</th>
-<th>Resposta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What?(O que deve será feito?)</td>
-<td><strong>Gerência de XXXX</strong></td>
-</tr>
-<tr>
-<td>Why? (Por que isso será feito?)</td>
-<td>Para auxiliar na...</td>
-</tr>
-<tr>
-<td>Where? (Onde será feito?)</td>
-<td>No...)</td>
-</tr>
-<tr>
-<td>When? (Quando será feito?)</td>
-<td>A gerência será....</td>
-</tr>
-<tr>
-<td>Who? (Quem irá fazer?)</td>
-<td>Pessoa(s)....</td>
-</tr>
-<tr>
-<td>How? (Como será feito?)</td>
-<td>Utilizando o nome do aplicativo...</td>
-</tr>
-<tr>
-<td>How much? (Quanto custará?)</td>
-<td>Tempo....</td>
-</tr>
-</tbody>
-</table>
-<h2 id="conclusao">Conclusão</h2>
-<p>O 5W2H é um técnica bem simples e de fácil entendimento, sem a necessidade de um especialista. Dentro da disciplina a técnica fornece um entendimento melhor, para a equipe, sobre o projeto como responsabilidades, motivação e organização de ações.   </p>
-<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
-<blockquote>
-<p>5W2H: disponivel em :https://www../</p>
-<p>O que é 5W2H, disponivel em :https://www...</p>
-</blockquote>
-<h2 id="autores">Autor(es)</h2>
-<table>
-<thead>
-<tr>
-<th>Data</th>
-<th>Versão</th>
-<th>Descrição</th>
-<th>Autor(es)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>24/08/20</td>
-<td>1.0</td>
-<td>Criação do documento</td>
-<td>xxx xxxx</td>
-</tr>
-<tr>
-<td>09/09/20</td>
-<td>2.0</td>
-<td>Adicionada visão produto</td>
-<td>xxxx xxxx</td>
-</tr>
-</tbody>
-</table>
+<p>Para criar um projeto ASP.NET Core MVC com um modelo <code>Employee</code> e usar o Entity Framework Core para acessar um banco de dados, siga as etapas abaixo:</p>
+<h3 id="1-configuracao-do-projeto-aspnet-core-mvc">1. Configuração do Projeto ASP.NET Core MVC</h3>
+<ol>
+<li>Abra o Visual Studio e selecione <strong>Create a new project</strong>.</li>
+<li>Escolha <strong>ASP.NET Core Web Application</strong> e clique em <strong>Next</strong>.</li>
+<li>Nomeie o projeto (por exemplo, <code>EmployeeManagement</code>) e selecione o local para salvá-lo.</li>
+<li>Selecione o <strong>Framework</strong> como <strong>.NET 6.0</strong> (ou superior) e clique em <strong>Create</strong>.</li>
+<li>Na próxima tela, escolha <strong>Web Application (Model-View-Controller)</strong> e marque <strong>Enable Docker</strong> se desejar suporte a Docker. Clique em <strong>Create</strong>.</li>
+</ol>
+<h3 id="2-instalacao-do-entity-framework-core">2. Instalação do Entity Framework Core</h3>
+<p>Para usar o Entity Framework Core, você precisa instalar alguns pacotes:
+1. Abra o <strong>Package Manager Console</strong> no Visual Studio (<strong>Tools &gt; NuGet Package Manager &gt; Package Manager Console</strong>).
+2. Execute os seguintes comandos para instalar o EF Core e a biblioteca do provedor SQL Server:
+   <div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Install-Package<span class="w"> </span>Microsoft.EntityFrameworkCore
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Install-Package<span class="w"> </span>Microsoft.EntityFrameworkCore.SqlServer
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Install-Package<span class="w"> </span>Microsoft.EntityFrameworkCore.Tools
+</span></code></pre></div></p>
+<h3 id="3-criacao-do-modelo-employee">3. Criação do Modelo <code>Employee</code></h3>
+<ol>
+<li>Na pasta <strong>Models</strong>, crie um novo arquivo chamado <code>Employee.cs</code> e adicione o seguinte código:
+   <div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.ComponentModel.DataAnnotations</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Employee</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="na">[Required]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="na">[StringLength(100)]</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="na">[Required]</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="na">[Range(18, 65)]</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Age</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="na">[Required]</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="na">[StringLength(50)]</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Position</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="na">[Range(30000, 200000)]</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">Salary</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="p">}</span>
+</span></code></pre></div></li>
+</ol>
+<h3 id="4-configuracao-do-contexto-do-banco-de-dados">4. Configuração do Contexto do Banco de Dados</h3>
+<ol>
+<li>
+<p>Na pasta <strong>Data</strong>, crie uma nova classe chamada <code>AppDbContext.cs</code>:
+   <div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.EntityFrameworkCore</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">AppDbContext</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">DbContext</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">AppDbContext</span><span class="p">(</span><span class="n">DbContextOptions</span><span class="o">&lt;</span><span class="n">AppDbContext</span><span class="o">&gt;</span><span class="w"> </span><span class="n">options</span><span class="p">)</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">base</span><span class="p">(</span><span class="n">options</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">DbSet</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Employees</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Adicione o contexto ao <strong>Startup.cs</strong> (ou <code>Program.cs</code>, dependendo da versão do ASP.NET Core):
+   <div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.EntityFrameworkCore</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">var</span><span class="w"> </span><span class="n">builder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WebApplication</span><span class="p">.</span><span class="n">CreateBuilder</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">// Configuração do banco de dados SQL Server</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">builder</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="n">AddDbContext</span><span class="o">&lt;</span><span class="n">AppDbContext</span><span class="o">&gt;</span><span class="p">(</span><span class="n">options</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">options</span><span class="p">.</span><span class="n">UseSqlServer</span><span class="p">(</span><span class="n">builder</span><span class="p">.</span><span class="n">Configuration</span><span class="p">.</span><span class="n">GetConnectionString</span><span class="p">(</span><span class="s">&quot;DefaultConnection&quot;</span><span class="p">)));</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kt">var</span><span class="w"> </span><span class="n">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">builder</span><span class="p">.</span><span class="n">Build</span><span class="p">();</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Configure a <strong>string de conexão</strong> no arquivo <code>appsettings.json</code>:
+   <div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&quot;ConnectionStrings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">&quot;DefaultConnection&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Server=(localdb)\\mssqllocaldb;Database=EmployeeDB;Trusted_Connection=True;MultipleActiveResultSets=true&quot;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+</span></code></pre></div></p>
+</li>
+</ol>
+<h3 id="5-criacao-da-migration-e-atualizacao-do-banco-de-dados">5. Criação da Migration e Atualização do Banco de Dados</h3>
+<p>No <strong>Package Manager Console</strong>, execute os seguintes comandos para criar a migração inicial e aplicar as alterações no banco de dados:
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Add-Migration<span class="w"> </span>InitialCreate
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Update-Database
+</span></code></pre></div></p>
+<h3 id="6-criacao-do-controller-employeecontroller">6. Criação do Controller <code>EmployeeController</code></h3>
+<ol>
+<li>Na pasta <strong>Controllers</strong>, clique com o botão direito e selecione <strong>Add &gt; Controller</strong>.</li>
+<li>Selecione <strong>MVC Controller with views, using Entity Framework</strong>.</li>
+<li>Escolha o modelo <code>Employee</code> e o <code>AppDbContext</code> para o contexto de dados, e clique em <strong>Add</strong>.</li>
+</ol>
+<p>Isso criará automaticamente um <code>EmployeeController</code> com ações CRUD e gerará as views correspondentes.</p>
+<h3 id="7-configuracao-das-rotas-e-teste-da-aplicacao">7. Configuração das Rotas e Teste da Aplicação</h3>
+<p>No <code>Program.cs</code>, certifique-se de que o mapeamento de rotas está configurado:
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">app</span><span class="p">.</span><span class="n">MapControllerRoute</span><span class="p">(</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;default&quot;</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="n">pattern</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{controller=Employee}/{action=Index}/{id?}&quot;</span><span class="p">);</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">app</span><span class="p">.</span><span class="n">Run</span><span class="p">();</span>
+</span></code></pre></div></p>
+<p>Agora você pode executar a aplicação e acessar o controlador <code>Employee</code> para adicionar, editar, excluir e listar funcionários usando o EF Core e ASP.NET Core MVC.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -2959,7 +2872,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../../_Disciplina/Roteiros/Django/AppStreaming/07_Admin_Streaming/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 07 Admin Streaming">
+          <a href="../09_Swagger/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 09 Swagger">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2969,20 +2882,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                07 Admin Streaming
+                09 Swagger
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Brainstorm/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Brainstorm">
+          <a href="../../AppStreaming/01_Projeto_Streaming/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 01 Projeto Streaming">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Brainstorm
+                01 Projeto Streaming
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3073,10 +2986,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>

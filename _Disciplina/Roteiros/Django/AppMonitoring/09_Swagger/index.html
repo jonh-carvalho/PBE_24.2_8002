@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../../_Disciplina/Roteiros/Django/AppStreaming/07_Admin_Streaming/">
+        <link rel="prev" href="../08_CorsOrigin/">
       
       
-        <link rel="next" href="../Brainstorm/">
+        <link rel="next" href="../MVC/">
       
       
-      <link rel="icon" href="../../images/favicon.png">
+      <link rel="icon" href="../../../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
-        <title>5W2H - Projeto Back-End</title>
+        <title>09 Swagger - Projeto Back-End</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#1-instalar-as-dependencias-necessarias" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -86,9 +86,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../.." title="Projeto Back-End" class="md-header__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
+    <a href="../../../../.." title="Projeto Back-End" class="md-header__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
       
-  <img src="../../assets/ibmec_logo.png" alt="logo">
+  <img src="../../../../../assets/ibmec_logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5W2H
+              09 Swagger
             
           </span>
         </div>
@@ -180,7 +180,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -195,11 +195,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../_Disciplina/aulas/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../aulas/" class="md-tabs__link">
           
   
    Disciplina
@@ -213,13 +215,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../base/5w2h/" class="md-tabs__link">
           
   
   Base
@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../iteracao/iteracao1/" class="md-tabs__link">
+        <a href="../../../../../iteracao/iteracao1/" class="md-tabs__link">
           
   
   Iteracao
@@ -255,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../modelagem/das/" class="md-tabs__link">
+        <a href="../../../../../modelagem/das/" class="md-tabs__link">
           
   
   Modelagem
@@ -294,9 +294,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Projeto Back-End" class="md-nav__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
+    <a href="../../../../.." title="Projeto Back-End" class="md-nav__button md-logo" aria-label="Projeto Back-End" data-md-component="logo">
       
-  <img src="../../assets/ibmec_logo.png" alt="logo">
+  <img src="../../../../../assets/ibmec_logo.png" alt="logo">
 
     </a>
     Projeto Back-End
@@ -323,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -340,23 +340,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -367,7 +372,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
              Disciplina
@@ -381,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/aulas/" class="md-nav__link">
+      <a href="../../../../aulas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -402,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/github/" class="md-nav__link">
+      <a href="../../../../github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/mkdocs/" class="md-nav__link">
+      <a href="../../../../mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/manage/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/manage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/__init__/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/__init__/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/admin/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/admin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/apps/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/models/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/tests/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/views/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/views/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/0001_initial/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/0001_initial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/0002_employee/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/0002_employee/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/0003_department_alter_employee_department/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/0003_department_alter_employee_department/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/app/migrations/__init__/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/app/migrations/__init__/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -881,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/__init__/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/__init__/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/asgi/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/asgi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/settings/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/urls/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/urls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Code/DemoDjango8002/project/wsgi/" class="md-nav__link">
+      <a href="../../../../Code/DemoDjango8002/project/wsgi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,6 +1012,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1016,11 +1023,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -1034,7 +1041,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Roteiros
@@ -1086,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/introsqlite/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/introsqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1107,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/pysqlite/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/pysqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1128,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/sqlite/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Banco%20de%20Dados/teste/" class="md-nav__link">
+      <a href="../../../Banco%20de%20Dados/teste/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1175,6 +1182,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1184,11 +1193,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
@@ -1202,7 +1211,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_2">
             <span class="md-nav__icon md-icon"></span>
             Django
@@ -1216,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/Intro%20Django/" class="md-nav__link">
+      <a href="../../Intro%20Django/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1237,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/RestDjango/" class="md-nav__link">
+      <a href="../../RestDjango/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1255,6 +1264,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1264,11 +1275,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_2_3" id="__nav_2_5_2_3_label" tabindex="0">
@@ -1282,7 +1293,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_2_3">
             <span class="md-nav__icon md-icon"></span>
             AppMonitoring
@@ -1296,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/01_Projeto_Monitoring/" class="md-nav__link">
+      <a href="../01_Projeto_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1317,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/01_Regras_Neg%C3%B3cio_Monitoring/" class="md-nav__link">
+      <a href="../01_Regras_Neg%C3%B3cio_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1338,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/02_Modelagem_Monitoring/" class="md-nav__link">
+      <a href="../02_Modelagem_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1359,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/03_Rest_Monitoring/" class="md-nav__link">
+      <a href="../03_Rest_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1380,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/04_Shell_Monitoring/" class="md-nav__link">
+      <a href="../04_Shell_Monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,7 +1412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/05_Consume_Streaming/" class="md-nav__link">
+      <a href="../05_Consume_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1422,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/06_Consume_Streaming_Web/" class="md-nav__link">
+      <a href="../06_Consume_Streaming_Web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1443,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/07_Admin_Streaming/" class="md-nav__link">
+      <a href="../07_Admin_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1464,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/08_CorsOrigin/" class="md-nav__link">
+      <a href="../08_CorsOrigin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1482,10 +1493,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/09_Swagger/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    09 Swagger
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1494,6 +1523,96 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-instalar-as-dependencias-necessarias" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Instalar as Dependências Necessárias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-atualizar-a-configuracao-no-urlspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Atualizar a Configuração no urls.py
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-reiniciar-o-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Reiniciar o Servidor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-verificar-acesso-ao-swagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verificar Acesso ao Swagger
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-caso-apareca-o-erro-de-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Caso apareça o erro de template
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-configurar-static_root" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configurar STATIC_ROOT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-executar-collectstatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Executar collectstatic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-reiniciar-o-servidor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Reiniciar o Servidor
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1506,7 +1625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppMonitoring/MVC/" class="md-nav__link">
+      <a href="../MVC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1573,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/01_Projeto_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/01_Projeto_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1594,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/02_Modelagem_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/02_Modelagem_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1615,7 +1734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/03_Rest_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/03_Rest_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1636,7 +1755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/04_Shell_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/04_Shell_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1657,7 +1776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/05_Consume_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/05_Consume_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1678,7 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/06_Consume_Streaming_Web/" class="md-nav__link">
+      <a href="../../AppStreaming/06_Consume_Streaming_Web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1699,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Disciplina/Roteiros/Django/AppStreaming/07_Admin_Streaming/" class="md-nav__link">
+      <a href="../../AppStreaming/07_Admin_Streaming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1748,28 +1867,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1780,7 +1894,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Base
@@ -1791,28 +1905,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    5W2H
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../base/5w2h/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,120 +1917,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introdução
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metodologia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Metodologia
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#questoes-5w2h" class="md-nav__link">
-    <span class="md-ellipsis">
-      Questões 5W2H
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Questões 5W2H">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#versao-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 1.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-geral" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão geral
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#versao-20" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 2.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-produto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão produto
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias-bibliograficas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Referências Bibliográficas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#autores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Autor(es)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1947,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Brainstorm/" class="md-nav__link">
+      <a href="../../../../../base/Brainstorm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1968,7 +1950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documento_de_visao/" class="md-nav__link">
+      <a href="../../../../../base/documento_de_visao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1989,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../entrevista/" class="md-nav__link">
+      <a href="../../../../../base/entrevista/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2010,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mapa_mental/" class="md-nav__link">
+      <a href="../../../../../base/mapa_mental/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2031,7 +2013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodologia/" class="md-nav__link">
+      <a href="../../../../../base/metodologia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2052,7 +2034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pesquisa/" class="md-nav__link">
+      <a href="../../../../../base/pesquisa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2073,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototipo_alta_fidelidade/" class="md-nav__link">
+      <a href="../../../../../base/prototipo_alta_fidelidade/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2139,7 +2121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao1/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2160,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao2/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2181,7 +2163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao3/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2202,7 +2184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao4/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2223,7 +2205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao5/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2244,7 +2226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao6/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2265,7 +2247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iteracao/iteracao7/" class="md-nav__link">
+      <a href="../../../../../iteracao/iteracao7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2331,7 +2313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/das/" class="md-nav__link">
+      <a href="../../../../../modelagem/das/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2352,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/diagrama_de_classes/" class="md-nav__link">
+      <a href="../../../../../modelagem/diagrama_de_classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2411,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/Casos%20de%20Uso/Exemplo%20Biblioteca%20Digital/" class="md-nav__link">
+      <a href="../../../../../modelagem/Casos%20de%20Uso/Exemplo%20Biblioteca%20Digital/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2432,7 +2414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/Casos%20de%20Uso/casosdeuso/" class="md-nav__link">
+      <a href="../../../../../modelagem/Casos%20de%20Uso/casosdeuso/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2499,7 +2481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/Classes/classes/" class="md-nav__link">
+      <a href="../../../../../modelagem/Classes/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2566,7 +2548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/ProceduralPoo/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/ProceduralPoo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2587,7 +2569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/kyvi/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/kyvi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2608,7 +2590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/poo/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/poo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2629,7 +2611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelagem/poo/pooaula/" class="md-nav__link">
+      <a href="../../../../../modelagem/poo/pooaula/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2683,96 +2665,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
+  <a href="#1-instalar-as-dependencias-necessarias" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdução
+      1. Instalar as Dependências Necessárias
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#metodologia" class="md-nav__link">
+  <a href="#2-atualizar-a-configuracao-no-urlspy" class="md-nav__link">
     <span class="md-ellipsis">
-      Metodologia
+      2. Atualizar a Configuração no urls.py
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#questoes-5w2h" class="md-nav__link">
+  <a href="#3-reiniciar-o-servidor" class="md-nav__link">
     <span class="md-ellipsis">
-      Questões 5W2H
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Questões 5W2H">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#versao-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 1.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-geral" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão geral
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#versao-20" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versão 2.0
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#visao-produto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Visão produto
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
+      3. Reiniciar o Servidor
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias-bibliograficas" class="md-nav__link">
+  <a href="#4-verificar-acesso-ao-swagger" class="md-nav__link">
     <span class="md-ellipsis">
-      Referências Bibliográficas
+      4. Verificar Acesso ao Swagger
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#autores" class="md-nav__link">
+  <a href="#5-caso-apareca-o-erro-de-template" class="md-nav__link">
     <span class="md-ellipsis">
-      Autor(es)
+      5. Caso apareça o erro de template
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-configurar-static_root" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configurar STATIC_ROOT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-executar-collectstatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Executar collectstatic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-reiniciar-o-servidor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Reiniciar o Servidor
     </span>
   </a>
   
@@ -2796,140 +2754,76 @@
   
 
 
-  <h1>5W2H</h1>
+  <h1>09 Swagger</h1>
 
-<h2 id="introducao">Introdução</h2>
-<p align = "justify">
-    O 5W2H é uma ferramenta administrativa  que pode ser utilizada para diferentes contextos dentro de uma organização, como na organização para planejamento estratégico e guia na execução de ações. O 5W2H baseia-se em 7 perguntas (What?, Why?, Where?, Who?, When?, How? e How much?), com o intuito de esclarecer e organizar ideias. A ferramenta será utilizada como um guia de ações, tornando os objetivos mais evidentes para a equipe, auxiliando na compreensão, organização e tomadas de decisões no projeto.
-</p>
-
-<h2 id="metodologia">Metodologia</h2>
-<p align = "justify">
-    A equipe se reuniu para esclarecimento sobre o tema do projeto, a partir dos pontos debatidos foi possível responder às questões do 5W2H.  
-</p>
-
-<h2 id="questoes-5w2h">Questões 5W2H</h2>
-<h3 id="versao-10">Versão 1.0</h3>
-<h3 id="visao-geral">Visão geral</h3>
-<table>
-<thead>
-<tr>
-<th>Questão</th>
-<th>Resposta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What?(O que deve será feito?)</td>
-<td>Aplicativo Web App para....</td>
-</tr>
-<tr>
-<td>Why? (Por que isso será feito?)</td>
-<td>Para auxiliar...</td>
-</tr>
-<tr>
-<td>Where? (Onde será feito?)</td>
-<td>O trabalho será realizado....</td>
-</tr>
-<tr>
-<td>When? (Quando será feito?)</td>
-<td>Durante o semestre de XXXX</td>
-</tr>
-<tr>
-<td>Who? (Quem irá fazer?)</td>
-<td>A equipe é formada pelos alunos...</td>
-</tr>
-<tr>
-<td>How? (Como será feito?)</td>
-<td>Utilizando metodologia RUP/UP e ferramentas como...</td>
-</tr>
-<tr>
-<td>How much? (Quanto custará?)</td>
-<td>O custo do projeto será o tempo e esforço para o desenvolvimento da aplicação</td>
-</tr>
-</tbody>
-</table>
-<h3 id="versao-20">Versão 2.0</h3>
-<h3 id="visao-produto">Visão produto</h3>
-<table>
-<thead>
-<tr>
-<th>Questão</th>
-<th>Resposta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What?(O que deve será feito?)</td>
-<td><strong>Gerência de XXXX</strong></td>
-</tr>
-<tr>
-<td>Why? (Por que isso será feito?)</td>
-<td>Para auxiliar na...</td>
-</tr>
-<tr>
-<td>Where? (Onde será feito?)</td>
-<td>No...)</td>
-</tr>
-<tr>
-<td>When? (Quando será feito?)</td>
-<td>A gerência será....</td>
-</tr>
-<tr>
-<td>Who? (Quem irá fazer?)</td>
-<td>Pessoa(s)....</td>
-</tr>
-<tr>
-<td>How? (Como será feito?)</td>
-<td>Utilizando o nome do aplicativo...</td>
-</tr>
-<tr>
-<td>How much? (Quanto custará?)</td>
-<td>Tempo....</td>
-</tr>
-</tbody>
-</table>
-<h2 id="conclusao">Conclusão</h2>
-<p>O 5W2H é um técnica bem simples e de fácil entendimento, sem a necessidade de um especialista. Dentro da disciplina a técnica fornece um entendimento melhor, para a equipe, sobre o projeto como responsabilidades, motivação e organização de ações.   </p>
-<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
-<blockquote>
-<p>5W2H: disponivel em :https://www../</p>
-<p>O que é 5W2H, disponivel em :https://www...</p>
-</blockquote>
-<h2 id="autores">Autor(es)</h2>
-<table>
-<thead>
-<tr>
-<th>Data</th>
-<th>Versão</th>
-<th>Descrição</th>
-<th>Autor(es)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>24/08/20</td>
-<td>1.0</td>
-<td>Criação do documento</td>
-<td>xxx xxxx</td>
-</tr>
-<tr>
-<td>09/09/20</td>
-<td>2.0</td>
-<td>Adicionada visão produto</td>
-<td>xxxx xxxx</td>
-</tr>
-</tbody>
-</table>
+<h3 id="1-instalar-as-dependencias-necessarias">1. Instalar as Dependências Necessárias</h3>
+<p>O <code>drf-yasg</code> usa a biblioteca <code>PyYAML</code> para a geração do schema OpenAPI. Caso ainda não esteja instalada, execute:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>PyYAML
+</span></code></pre></div>
+<h3 id="2-atualizar-a-configuracao-no-urlspy">2. Atualizar a Configuração no <code>urls.py</code></h3>
+<p>Certifique-se de que o <code>urls.py</code> está configurado corretamente. Um exemplo de configuração de <code>urls.py</code> para evitar esse erro:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">re_path</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">rest_framework</span> <span class="kn">import</span> <span class="n">permissions</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">drf_yasg.views</span> <span class="kn">import</span> <span class="n">get_schema_view</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span> <span class="nn">drf_yasg</span> <span class="kn">import</span> <span class="n">openapi</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">schema_view</span> <span class="o">=</span> <span class="n">get_schema_view</span><span class="p">(</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">openapi</span><span class="o">.</span><span class="n">Info</span><span class="p">(</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;API de Conteúdos&quot;</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="n">default_version</span><span class="o">=</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Documentação da API para o app de streaming de áudio e vídeo&quot;</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">terms_of_service</span><span class="o">=</span><span class="s2">&quot;https://www.google.com/policies/terms/&quot;</span><span class="p">,</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="n">contact</span><span class="o">=</span><span class="n">openapi</span><span class="o">.</span><span class="n">Contact</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="s2">&quot;suporte@exemplo.com&quot;</span><span class="p">),</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="n">license</span><span class="o">=</span><span class="n">openapi</span><span class="o">.</span><span class="n">License</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Licença BSD&quot;</span><span class="p">),</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="p">),</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">public</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">permission_classes</span><span class="o">=</span><span class="p">(</span><span class="n">permissions</span><span class="o">.</span><span class="n">AllowAny</span><span class="p">,),</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="c1"># Suas outras URLs</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;api/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;app.urls&#39;</span><span class="p">)),</span>  <span class="c1"># Inclua as URLs do seu app</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="c1"># URLs do Swagger</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="n">re_path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^swagger/$&#39;</span><span class="p">,</span> <span class="n">schema_view</span><span class="o">.</span><span class="n">with_ui</span><span class="p">(</span><span class="s1">&#39;swagger&#39;</span><span class="p">,</span> <span class="n">cache_timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;schema-swagger-ui&#39;</span><span class="p">),</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>    <span class="n">re_path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^redoc/$&#39;</span><span class="p">,</span> <span class="n">schema_view</span><span class="o">.</span><span class="n">with_ui</span><span class="p">(</span><span class="s1">&#39;redoc&#39;</span><span class="p">,</span> <span class="n">cache_timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;schema-redoc&#39;</span><span class="p">),</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="3-reiniciar-o-servidor">3. Reiniciar o Servidor</h3>
+<p>Após fazer essas mudanças, reinicie o servidor de desenvolvimento para garantir que as configurações sejam aplicadas:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
+</span></code></pre></div>
+<h3 id="4-verificar-acesso-ao-swagger">4. Verificar Acesso ao Swagger</h3>
+<p>Acesse <code>http://localhost:8000/swagger/</code> para visualizar a interface do Swagger. Se tudo estiver configurado corretamente, você deve ver a interface do Swagger.</p>
+<h3 id="5-caso-apareca-o-erro-de-template">5. Caso apareça o erro de template</h3>
+<p>Esse erro ocorre porque a configuração de arquivos estáticos (<code>STATIC_ROOT</code>) não está definida no seu <code>settings.py</code>. Para resolver, você precisa adicionar o caminho onde o Django armazenará os arquivos estáticos coletados quando você executar o comando <code>collectstatic</code>.</p>
+<h3 id="1-configurar-static_root">1. Configurar <code>STATIC_ROOT</code></h3>
+<p>Adicione o seguinte no <code>settings.py</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">os</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">STATIC_URL</span> <span class="o">=</span> <span class="s1">&#39;/static/&#39;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Define o caminho para coletar arquivos estáticos</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s1">&#39;staticfiles&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>O <code>STATIC_ROOT</code> define o diretório onde todos os arquivos estáticos do projeto serão armazenados após você rodar <code>collectstatic</code>.</p>
+<h3 id="2-executar-collectstatic">2. Executar <code>collectstatic</code></h3>
+<p>Após definir o <code>STATIC_ROOT</code>, execute o comando abaixo para que o Django copie todos os arquivos estáticos para o diretório configurado em <code>STATIC_ROOT</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>collectstatic
+</span></code></pre></div>
+<p>Esse comando é especialmente importante em ambientes de produção, mas você pode executá-lo em desenvolvimento para garantir que os arquivos estáticos estão no diretório correto.</p>
+<h3 id="3-reiniciar-o-servidor_1">3. Reiniciar o Servidor</h3>
+<p>Depois de definir o <code>STATIC_ROOT</code> e rodar <code>collectstatic</code>, reinicie o servidor Django:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
+</span></code></pre></div>
+<p>Esses passos devem resolver o erro, e você poderá acessar o Swagger sem problemas.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -2959,7 +2853,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../../_Disciplina/Roteiros/Django/AppStreaming/07_Admin_Streaming/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 07 Admin Streaming">
+          <a href="../08_CorsOrigin/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 08 CorsOrigin">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2969,20 +2863,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                07 Admin Streaming
+                08 CorsOrigin
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Brainstorm/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Brainstorm">
+          <a href="../MVC/" class="md-footer__link md-footer__link--next" aria-label="Próximo: MVC">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Brainstorm
+                MVC
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3073,10 +2967,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
