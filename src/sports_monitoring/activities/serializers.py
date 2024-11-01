@@ -12,7 +12,7 @@ class ActivitySerializer(serializers.ModelSerializer):
     # metrics = ActivityMetricsSerializer()
     class Meta:
         model = Activity
-        fields = ['id', 'activity_type', 'start_time', 'end_time', 'location', 'description', 'metrics']
+        fields = ['id', 'activity_type', 'start_time', 'end_time', 'location', 'description']
 
 """
 class UserSerializer(serializers.ModelSerializer):
