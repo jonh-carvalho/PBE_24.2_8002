@@ -18,6 +18,7 @@ class ActivityTypeViewSet(viewsets.ModelViewSet):
 class ActivityViewSet(viewsets.ModelViewSet):
     queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
+    
 
 """
 class ActivityMetricsViewSet(viewsets.ModelViewSet):

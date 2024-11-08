@@ -6,13 +6,13 @@ from .models import Activity, ActivityType
 class ActivityTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = ActivityType
-        fields = ['id', 'name', 'description']
+        fields = '__all__'
         
 class ActivitySerializer(serializers.ModelSerializer):
     # metrics = ActivityMetricsSerializer()
     class Meta:
         model = Activity
-        fields = ['id', 'activity_type', 'start_time', 'end_time', 'location', 'description']
+        fields = '__all__'
 
 """
 class UserSerializer(serializers.ModelSerializer):
